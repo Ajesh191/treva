@@ -1,0 +1,166 @@
+/***********Montserrat****************/
+ @font-face {
+     font-family: HKGrotesk;
+     src: url(../font/Montserrat-Thin.ttf);
+     font-weight:100;
+}
+ @font-face {
+     font-family: HKGrotesk;
+     src: url(../font/HKGrotesk-Light.ttf);
+     font-weight:100;
+}
+ @font-face {
+     font-family: Montserrat;
+     src: url(../font/HKGrotesk-Regular.ttf);
+     font-weight:400;
+}
+ @font-face {
+     font-family: HKGrotesk;
+     src: url(../font/HKGrotesk-Medium.ttf);
+     font-weight:500;
+}
+ @font-face {
+     font-family: HKGrotesk;
+     src: url(../font/HKGrotesk-SemiBold.ttf);
+     font-weight:500;
+}
+ @font-face {
+     font-family: HKGrotesk;
+     src: url(../font/HKGrotesk-Bold.ttf);
+     font-weight:700;
+}
+ @font-face {
+     font-family: HKGrotesk;
+     src: url(../font/HKGrotesk-ExtraBold.ttf);
+     font-weight:900;
+}
+/***********Montserrat****************/
+ *{
+     font-family: 'HKGrotesk', sans-serif;
+}
+ html{
+     scroll-behavior: smooth;
+}
+ p{
+     font-size: 15px;
+}
+ img{
+     max-width:100%;
+}
+button:focus{
+      outline: 0 !important;
+}
+ .nav-btn{
+     background: transparent;
+     border: 1px solid #2B83EA;
+     box-sizing: border-box;
+     border-radius: 2px;
+     color: #fff;
+     padding: 10px 15px;
+     font-size: 15px;
+}
+ .nav-btn:hover{
+     background-color: #fff;
+     text-decoration: none;
+     color: #528FF0;
+}
+ .nav-btn:hover img{
+     display: block;
+}
+ .nav-btn img{
+     display: none;
+     float: right;
+     margin: 7px 0px 0 10px;
+}
+ .star-rating-wrapper{
+     display: flex;
+}
+ .star-rating-wrapper h5{
+     color: #202324;
+     font-size: 16px;
+     padding: 14px 7px;
+}
+ .star-rating {
+     direction: rtl;
+     display: inline-block;
+     padding: 10px 0;
+}
+ .star-rating input[type=radio] {
+     display: none 
+}
+ .star-rating label {
+     color: #bbb;
+     font-size: 18px;
+     padding: 0;
+     cursor: pointer;
+     -webkit-transition: all .3s ease-in-out;
+     transition: all .3s ease-in-out 
+}
+ .star-rating label:hover, .star-rating label:hover ~ label, .star-rating input[type=radio]:checked ~ label {
+     color: #FFD200 
+}
+ .number-wrpr{
+     display: flex;
+}
+ .minus, .plus{
+     width: 40px;
+     height: 48px;
+     background: #EDF1F2;
+     border-radius: 4px;
+     color: rgb(0 0 0 / 52%);
+     font-size: 20px;
+     padding:8px 5px 8px 5px;
+     text-align: center;
+       cursor: pointer;
+       transition: all ease 0.5s;
+}
+.minus:hover, .plus:hover{
+      background: #03062f;
+    color: #fff;
+    
+}
+ .number-wrpr input{
+     height: 48px;
+     width: 40px;
+     text-align: center;
+     font-size: 15px;
+     border-radius: 4px;
+     border: 0;
+}
+ .number-wrpr input:focus{
+     outline:0;
+}
+ .radio {
+     margin: 0.5rem;
+}
+ .radio input[type=radio] {
+     position: absolute;
+     opacity: 0;
+}
+ .radio input[type=radio] + .radio-label:before {
+     content: "";
+     background: #f4f4f4;
+     border-radius: 100%;
+     border: 1px solid #b4b4b4;
+     display: inline-block;
+     width: 1.4em;
+     height: 1.4em;
+     position: relative;
+     top: -0.2em;
+     margin-right: 1em;
+     vertical-align: top;
+     cursor: pointer;
+     text-align: center;
+     transition: all 250ms ease;
+}
+ .radio input[type=radio]:checked + .radio-label:before {
+     background-color: #00BA74;
+     box-shadow: inset 0 0 0 4px #f4f4f4;
+}
+ .radio input[type=radio]:focus + .radio-label:before {
+     outline: none;
+     border-color: #00BA74;
+}
+ .radio input[type=radio] + .radio-label:empty:before {
+     margin-right: 0;
+}
